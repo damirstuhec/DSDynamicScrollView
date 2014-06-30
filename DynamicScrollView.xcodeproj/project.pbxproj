@@ -24,6 +24,7 @@
 		2616D224195F171900901FFC /* DSDynamicScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2616D223195F171900901FFC /* DSDynamicScrollView.m */; };
 		261A3E2C19607D110072C812 /* DSDynamicView.m in Sources */ = {isa = PBXBuildFile; fileRef = 261A3E2B19607D110072C812 /* DSDynamicView.m */; };
 		261A3E2F19607E250072C812 /* ExampleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 261A3E2E19607E250072C812 /* ExampleView.m */; };
+		2641FE151961875E009D3E89 /* DSDynamicScrollView_demo.gif in Resources */ = {isa = PBXBuildFile; fileRef = 2641FE141961875E009D3E89 /* DSDynamicScrollView_demo.gif */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +63,7 @@
 		261A3E2B19607D110072C812 /* DSDynamicView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DSDynamicView.m; path = Component/DSDynamicView.m; sourceTree = "<group>"; };
 		261A3E2D19607E250072C812 /* ExampleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ExampleView.h; path = Component/ExampleView.h; sourceTree = "<group>"; };
 		261A3E2E19607E250072C812 /* ExampleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ExampleView.m; path = Component/ExampleView.m; sourceTree = "<group>"; };
+		2641FE141961875E009D3E89 /* DSDynamicScrollView_demo.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = DSDynamicScrollView_demo.gif; path = "GitHub Assets/DSDynamicScrollView_demo.gif"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,6 +123,7 @@
 		2616D1F2195F16E800901FFC /* DynamicScrollView */ = {
 			isa = PBXGroup;
 			children = (
+				2641FE1119617E7E009D3E89 /* GitHub Assets */,
 				2616D221195F16FC00901FFC /* Component */,
 				2616D1FB195F16E800901FFC /* AppDelegate.h */,
 				2616D1FC195F16E800901FFC /* AppDelegate.m */,
@@ -173,6 +176,14 @@
 				261A3E2B19607D110072C812 /* DSDynamicView.m */,
 			);
 			name = Component;
+			sourceTree = "<group>";
+		};
+		2641FE1119617E7E009D3E89 /* GitHub Assets */ = {
+			isa = PBXGroup;
+			children = (
+				2641FE141961875E009D3E89 /* DSDynamicScrollView_demo.gif */,
+			);
+			name = "GitHub Assets";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -254,6 +265,7 @@
 				2616D205195F16E800901FFC /* Images.xcassets in Resources */,
 				2616D1F7195F16E800901FFC /* InfoPlist.strings in Resources */,
 				2616D200195F16E800901FFC /* Main.storyboard in Resources */,
+				2641FE151961875E009D3E89 /* DSDynamicScrollView_demo.gif in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
