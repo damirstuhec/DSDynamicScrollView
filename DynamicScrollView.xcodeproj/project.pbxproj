@@ -21,6 +21,9 @@
 		2616D20E195F16E800901FFC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2616D1F0195F16E800901FFC /* UIKit.framework */; };
 		2616D216195F16E800901FFC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2616D214195F16E800901FFC /* InfoPlist.strings */; };
 		2616D218195F16E800901FFC /* DynamicScrollViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2616D217195F16E800901FFC /* DynamicScrollViewTests.m */; };
+		2616D224195F171900901FFC /* DSDynamicScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2616D223195F171900901FFC /* DSDynamicScrollView.m */; };
+		261A3E2C19607D110072C812 /* DSDynamicView.m in Sources */ = {isa = PBXBuildFile; fileRef = 261A3E2B19607D110072C812 /* DSDynamicView.m */; };
+		261A3E2F19607E250072C812 /* ExampleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 261A3E2E19607E250072C812 /* ExampleView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +56,12 @@
 		2616D213195F16E800901FFC /* DynamicScrollViewTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DynamicScrollViewTests-Info.plist"; sourceTree = "<group>"; };
 		2616D215195F16E800901FFC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		2616D217195F16E800901FFC /* DynamicScrollViewTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DynamicScrollViewTests.m; sourceTree = "<group>"; };
+		2616D222195F171900901FFC /* DSDynamicScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DSDynamicScrollView.h; path = Component/DSDynamicScrollView.h; sourceTree = "<group>"; };
+		2616D223195F171900901FFC /* DSDynamicScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DSDynamicScrollView.m; path = Component/DSDynamicScrollView.m; sourceTree = "<group>"; };
+		261A3E2A19607D110072C812 /* DSDynamicView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DSDynamicView.h; path = Component/DSDynamicView.h; sourceTree = "<group>"; };
+		261A3E2B19607D110072C812 /* DSDynamicView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DSDynamicView.m; path = Component/DSDynamicView.m; sourceTree = "<group>"; };
+		261A3E2D19607E250072C812 /* ExampleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ExampleView.h; path = Component/ExampleView.h; sourceTree = "<group>"; };
+		261A3E2E19607E250072C812 /* ExampleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ExampleView.m; path = Component/ExampleView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,11 +121,14 @@
 		2616D1F2195F16E800901FFC /* DynamicScrollView */ = {
 			isa = PBXGroup;
 			children = (
+				2616D221195F16FC00901FFC /* Component */,
 				2616D1FB195F16E800901FFC /* AppDelegate.h */,
 				2616D1FC195F16E800901FFC /* AppDelegate.m */,
 				2616D1FE195F16E800901FFC /* Main.storyboard */,
 				2616D201195F16E800901FFC /* ViewController.h */,
 				2616D202195F16E800901FFC /* ViewController.m */,
+				261A3E2D19607E250072C812 /* ExampleView.h */,
+				261A3E2E19607E250072C812 /* ExampleView.m */,
 				2616D204195F16E800901FFC /* Images.xcassets */,
 				2616D1F3195F16E800901FFC /* Supporting Files */,
 			);
@@ -150,6 +162,17 @@
 				2616D214195F16E800901FFC /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2616D221195F16FC00901FFC /* Component */ = {
+			isa = PBXGroup;
+			children = (
+				2616D222195F171900901FFC /* DSDynamicScrollView.h */,
+				2616D223195F171900901FFC /* DSDynamicScrollView.m */,
+				261A3E2A19607D110072C812 /* DSDynamicView.h */,
+				261A3E2B19607D110072C812 /* DSDynamicView.m */,
+			);
+			name = Component;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -250,7 +273,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				2616D203195F16E800901FFC /* ViewController.m in Sources */,
+				261A3E2F19607E250072C812 /* ExampleView.m in Sources */,
+				261A3E2C19607D110072C812 /* DSDynamicView.m in Sources */,
 				2616D1FD195F16E800901FFC /* AppDelegate.m in Sources */,
+				2616D224195F171900901FFC /* DSDynamicScrollView.m in Sources */,
 				2616D1F9195F16E800901FFC /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -456,6 +482,7 @@
 				2616D21D195F16E800901FFC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2616D21E195F16E800901FFC /* Build configuration list for PBXNativeTarget "DynamicScrollViewTests" */ = {
 			isa = XCConfigurationList;
@@ -464,6 +491,7 @@
 				2616D220195F16E800901FFC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
