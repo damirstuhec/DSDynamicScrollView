@@ -42,9 +42,9 @@
     {
         NSMutableArray *viewsToKeep = NSMutableArray.new;
         NSMutableArray *viewsToAdd = NSMutableArray.new;
-        NSMutableArray *viewsToRemove = [self.views mutableCopy];
+        NSMutableArray *viewsToRemove = self.views;
         
-        for (UIView *view in array)
+        for (DSDynamicView *view in array)
         {
             if ([viewsToRemove containsObject:view])
             {
@@ -86,7 +86,7 @@
     
     __block NSInteger counter = 0;
     
-    for (UIView *viewToRemove in viewsToRemove)
+    for (DSDynamicView *viewToRemove in viewsToRemove)
     {
         [UIView animateWithDuration:((animation) ? 0.2f : 0.0f) animations:^{
             viewToRemove.frame = CGRectMake(320.0f, viewToRemove.frame.origin.y, viewToRemove.frame.size.width, viewToRemove.frame.size.height);
@@ -112,7 +112,7 @@
     
     __block NSInteger counter = 0;
     
-    for (UIView *viewToKeep in viewsToKeep)
+    for (DSDynamicView *viewToKeep in viewsToKeep)
     {
         NSInteger viewToKeepIndex = [self.views indexOfObject:viewToKeep];
         CGFloat viewToKeepY = viewToKeepIndex * (self.viewSize.height + DEFAULT_MARGIN);
@@ -140,13 +140,8 @@
     
     __block NSInteger counter = 0;
     
-    for (UIView *viewToAdd in viewsToAdd)
+    for (DSDynamicView *viewToAdd in viewsToAdd)
     {
-        CGFloat hue = ( arc4random() % 256 / 256.0 );
-        CGFloat saturation = ( arc4random() % 128 / 256.0 ) + 0.5;
-        CGFloat brightness = ( arc4random() % 128 / 256.0 ) + 0.5;
-        
-        viewToAdd.backgroundColor = [UIColor colorWithHue:hue saturation:saturation brightness:brightness alpha:1];
         viewToAdd.frame = CGRectMake(-320.0f, [self.views indexOfObject:viewToAdd] * (self.viewSize.height + DEFAULT_MARGIN), self.viewSize.width, self.viewSize.height);
         
         [self addSubview:viewToAdd];
