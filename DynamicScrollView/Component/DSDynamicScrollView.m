@@ -162,7 +162,7 @@
 - (void)calculateViewSize
 {
     NSInteger viewsCountWithLimit = (self.views.count > self.maxNumberOfViewsPerPage) ? self.maxNumberOfViewsPerPage : self.views.count;
-    self.viewSize = CGSizeMake(self.frame.size.width, (self.frame.size.height - ((viewsCountWithLimit - 1) * DEFAULT_MARGIN)) / viewsCountWithLimit);
+    self.viewSize = CGSizeMake(self.frame.size.width, (self.frame.size.height - self.contentInset.top - self.contentInset.bottom - ((viewsCountWithLimit - 1) * DEFAULT_MARGIN)) / viewsCountWithLimit);
 }
 
 @end
