@@ -1,5 +1,5 @@
 ## DSDynamicScrollView
-iOS component for building dynamic and animated UIScrollView. *Both, Swift and Objective-C versions!*
+iOS component for building dynamic and animated UIScrollView. **Both, Swift and Objective-C versions!**
 
 ## Demo
 See DSDynamicScrollView in action!
