@@ -18,8 +18,8 @@
 		2616D205195F16E800901FFC /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2616D204195F16E800901FFC /* Images.xcassets */; };
 		2616D20D195F16E800901FFC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2616D1EC195F16E800901FFC /* Foundation.framework */; };
 		2616D20E195F16E800901FFC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2616D1F0195F16E800901FFC /* UIKit.framework */; };
-		26DF1F9919DEC135003F6807 /* DSDynamicScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 26DF1F9619DEC135003F6807 /* DSDynamicScrollView.m */; };
-		26DF1F9A19DEC135003F6807 /* DSDynamicView.m in Sources */ = {isa = PBXBuildFile; fileRef = 26DF1F9819DEC135003F6807 /* DSDynamicView.m */; };
+		26323FE019DEF40B003EB271 /* DSDynamicScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 26323FDD19DEF40B003EB271 /* DSDynamicScrollView.m */; };
+		26323FE119DEF40B003EB271 /* DSDynamicView.m in Sources */ = {isa = PBXBuildFile; fileRef = 26323FDF19DEF40B003EB271 /* DSDynamicView.m */; };
 		26DF1F9D19DEC164003F6807 /* ExampleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 26DF1F9C19DEC164003F6807 /* ExampleView.m */; };
 /* End PBXBuildFile section */
 
@@ -49,10 +49,10 @@
 		2616D202195F16E800901FFC /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		2616D204195F16E800901FFC /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		2616D20A195F16E800901FFC /* DynamicScrollViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DynamicScrollViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		26DF1F9519DEC135003F6807 /* DSDynamicScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DSDynamicScrollView.h; path = Component/DSDynamicScrollView.h; sourceTree = "<group>"; };
-		26DF1F9619DEC135003F6807 /* DSDynamicScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DSDynamicScrollView.m; path = Component/DSDynamicScrollView.m; sourceTree = "<group>"; };
-		26DF1F9719DEC135003F6807 /* DSDynamicView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DSDynamicView.h; path = Component/DSDynamicView.h; sourceTree = "<group>"; };
-		26DF1F9819DEC135003F6807 /* DSDynamicView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DSDynamicView.m; path = Component/DSDynamicView.m; sourceTree = "<group>"; };
+		26323FDC19DEF40B003EB271 /* DSDynamicScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DSDynamicScrollView.h; path = "../Component_Objective-C/DSDynamicScrollView.h"; sourceTree = "<group>"; };
+		26323FDD19DEF40B003EB271 /* DSDynamicScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DSDynamicScrollView.m; path = "../Component_Objective-C/DSDynamicScrollView.m"; sourceTree = "<group>"; };
+		26323FDE19DEF40B003EB271 /* DSDynamicView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DSDynamicView.h; path = "../Component_Objective-C/DSDynamicView.h"; sourceTree = "<group>"; };
+		26323FDF19DEF40B003EB271 /* DSDynamicView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DSDynamicView.m; path = "../Component_Objective-C/DSDynamicView.m"; sourceTree = "<group>"; };
 		26DF1F9B19DEC164003F6807 /* ExampleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExampleView.h; sourceTree = "<group>"; };
 		26DF1F9C19DEC164003F6807 /* ExampleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExampleView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -139,10 +139,10 @@
 		26DF1F9419DEC123003F6807 /* Component */ = {
 			isa = PBXGroup;
 			children = (
-				26DF1F9519DEC135003F6807 /* DSDynamicScrollView.h */,
-				26DF1F9619DEC135003F6807 /* DSDynamicScrollView.m */,
-				26DF1F9719DEC135003F6807 /* DSDynamicView.h */,
-				26DF1F9819DEC135003F6807 /* DSDynamicView.m */,
+				26323FDC19DEF40B003EB271 /* DSDynamicScrollView.h */,
+				26323FDD19DEF40B003EB271 /* DSDynamicScrollView.m */,
+				26323FDE19DEF40B003EB271 /* DSDynamicView.h */,
+				26323FDF19DEF40B003EB271 /* DSDynamicView.m */,
 			);
 			name = Component;
 			sourceTree = "<group>";
@@ -243,12 +243,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				26DF1F9919DEC135003F6807 /* DSDynamicScrollView.m in Sources */,
+				26323FE019DEF40B003EB271 /* DSDynamicScrollView.m in Sources */,
 				2616D203195F16E800901FFC /* ViewController.m in Sources */,
 				2616D1FD195F16E800901FFC /* AppDelegate.m in Sources */,
 				2616D1F9195F16E800901FFC /* main.m in Sources */,
-				26DF1F9A19DEC135003F6807 /* DSDynamicView.m in Sources */,
 				26DF1F9D19DEC164003F6807 /* ExampleView.m in Sources */,
+				26323FE119DEF40B003EB271 /* DSDynamicView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -364,10 +364,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "DynamicScrollView/DynamicScrollView-Prefix.pch";
 				INFOPLIST_FILE = "DynamicScrollView/DynamicScrollView-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "DynamicScrollView-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -377,10 +381,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "DynamicScrollView/DynamicScrollView-Prefix.pch";
 				INFOPLIST_FILE = "DynamicScrollView/DynamicScrollView-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "DynamicScrollView-Bridging-Header.h";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

@@ -65,100 +65,69 @@
     self.v16 = [[ExampleView alloc] initWithFrame:CGRectZero name:@"View 16"];
     self.v17 = [[ExampleView alloc] initWithFrame:CGRectZero name:@"View 17"];
     
-    [self performSelector:@selector(firstViews) withObject:nil afterDelay:2.0f];
-    [self performSelector:@selector(secondViews) withObject:nil afterDelay:4.0f];
-    [self performSelector:@selector(thirdViews) withObject:nil afterDelay:6.0f];
-    [self performSelector:@selector(fourthViews) withObject:nil afterDelay:8.0f];
-    [self performSelector:@selector(fifthViews) withObject:nil afterDelay:10.0f];
-    [self performSelector:@selector(sixthViews) withObject:nil afterDelay:12.0f];
-}
-
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, 2 * NSEC_PER_SEC), dispatch_get_main_queue(), ^{
+        self.v1.uniqueNumber = 1;
+        self.v1.distance = 10;
+        self.v2.uniqueNumber = 2;
+        self.v2.distance = 20;
+        
+        [self.scrollView updateViewsWithArray:@[self.v1, self.v2]];
+    });
     
-    NSLog(@"DID RECEIVE MEMORY");
-}
-
-- (void)firstViews
-{
-    self.v1.uniqueNumber = 1;
-    self.v1.distance = 10;
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, 4 * NSEC_PER_SEC), dispatch_get_main_queue(), ^{
+        self.v3.uniqueNumber = 3;
+        self.v3.distance = 30;
+        
+        [self.scrollView updateViewsWithArray:@[self.v2]];
+    });
     
-    self.v2.uniqueNumber = 2;
-    self.v2.distance = 20;
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, 6 * NSEC_PER_SEC), dispatch_get_main_queue(), ^{
+        self.v4.uniqueNumber = 4;
+        self.v4.distance = 4;
+        self.v5.uniqueNumber = 5;
+        self.v5.distance = 15;
+        self.v6.uniqueNumber = 6;
+        self.v6.distance = 25;
+        self.v7.uniqueNumber = 7;
+        self.v7.distance = 70;
+        
+        [self.scrollView updateViewsWithArray:@[self.v4, self.v5, self.v6, self.v2]];
+    });
     
-    [self.scrollView updateViewsWithArray:@[self.v1, self.v2]];
-}
-
-- (void)secondViews
-{
-    self.v3.uniqueNumber = 3;
-    self.v3.distance = 30;
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, 8 * NSEC_PER_SEC), dispatch_get_main_queue(), ^{
+        self.v8.uniqueNumber = 8;
+        self.v8.distance = 80;
+        self.v9.uniqueNumber = 9;
+        self.v9.distance = 90;
+        self.v10.uniqueNumber = 10;
+        self.v10.distance = 100;
+        
+        [self.scrollView updateViewsWithArray:@[self.v8, self.v2, self.v5]];
+    });
     
-    [self.scrollView updateViewsWithArray:@[self.v2]];
-}
-
-- (void)thirdViews
-{
-    self.v4.uniqueNumber = 4;
-    self.v4.distance = 4;
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, 10 * NSEC_PER_SEC), dispatch_get_main_queue(), ^{
+        self.v11.uniqueNumber = 11;
+        self.v11.distance = 110;
+        self.v12.uniqueNumber = 12;
+        self.v12.distance = 120;
+        
+        [self.scrollView updateViewsWithArray:@[self.v5, self.v12]];
+    });
     
-    self.v5.uniqueNumber = 5;
-    self.v5.distance = 15;
-    
-    self.v6.uniqueNumber = 6;
-    self.v6.distance = 25;
-    
-    self.v7.uniqueNumber = 7;
-    self.v7.distance = 70;
-    
-    [self.scrollView updateViewsWithArray:@[self.v4, self.v5, self.v6, self.v2]];
-}
-
-- (void)fourthViews
-{
-    self.v8.uniqueNumber = 8;
-    self.v8.distance = 80;
-    
-    self.v9.uniqueNumber = 9;
-    self.v9.distance = 90;
-    
-    self.v10.uniqueNumber = 10;
-    self.v10.distance = 100;
-    
-    [self.scrollView updateViewsWithArray:@[self.v8, self.v2, self.v5]];
-}
-
-- (void)fifthViews
-{
-    self.v11.uniqueNumber = 11;
-    self.v11.distance = 110;
-    
-    self.v12.uniqueNumber = 12;
-    self.v12.distance = 120;
-    
-    [self.scrollView updateViewsWithArray:@[self.v5, self.v12]];
-}
-
-- (void)sixthViews
-{
-    self.v13.uniqueNumber = 13;
-    self.v13.distance = 130;
-    
-    self.v14.uniqueNumber = 14;
-    self.v14.distance = 140;
-    
-    self.v15.uniqueNumber = 15;
-    self.v15.distance = 150;
-    
-    self.v16.uniqueNumber = 16;
-    self.v16.distance = 160;
-    
-    self.v17.uniqueNumber = 17;
-    self.v17.distance = 170;
-    
-    [self.scrollView updateViewsWithArray:@[self.v13, self.v14, self.v15, self.v16, self.v12]];
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, 12 * NSEC_PER_SEC), dispatch_get_main_queue(), ^{
+        self.v13.uniqueNumber = 13;
+        self.v13.distance = 130;
+        self.v14.uniqueNumber = 14;
+        self.v14.distance = 140;
+        self.v15.uniqueNumber = 15;
+        self.v15.distance = 150;
+        self.v16.uniqueNumber = 16;
+        self.v16.distance = 160;
+        self.v17.uniqueNumber = 17;
+        self.v17.distance = 170;
+        
+        [self.scrollView updateViewsWithArray:@[self.v13, self.v14, self.v15, self.v16, self.v12]];
+    });
 }
 
 @end
